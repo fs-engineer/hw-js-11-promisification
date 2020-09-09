@@ -19,6 +19,30 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+.container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.toggle:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.toggle__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.toggle__title {
+  font-size: 50px;
+  font-style: italic;
+  color: rgb(119, 119, 119);
+  text-shadow: 3px 5px 6px rgb(189, 189, 189);
+}
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -27,6 +51,7 @@ body {
   background-color: #bbb;
   border-radius: 4px;
   text-align: center;
+  margin-right: 45px;
 }
 
 .toggle input {
